@@ -1,8 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from './MenuIcon.module.css'
 
-const MenuIcon = () => {
+const MenuIcon = ({ btnState }) => {
   const [open, setOpen] = useState(false)
+  useEffect(() => {
+    btnState(open)
+  }, [open])
   return (
     <div className={`${style.container} ${open ? style.change : ''}`} onClick={() => setOpen(!open)}>
       <div className={style.bar1}></div>
