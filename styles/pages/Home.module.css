@@ -1,0 +1,78 @@
+.intro {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  margin-top: 3em;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  transition: .5s;
+}
+
+.intro h1 {
+  font-family: 'Teko', sans-serif;
+  font-size: 5rem;
+  line-height: 0.8em;
+  text-transform: uppercase;
+  color: #3A437E;
+}
+
+.title {
+  margin: 4em 0;
+  color: #366AF4;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.title .icon {
+  border: 2px solid #366AF4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
+  border-radius: 25px;
+  
+}
+
+.title span {
+  margin-left: 1em;
+  transition: 0.5s;
+  font-size: 0.8rem;
+}
+
+
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3.5em;
+}
+
+.colored {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.colored a {
+  display: flex;
+  width: 100%;
+}
+
+
+.colored a img {
+  object-fit: cover;
+  height: 100%;
+  transform: translateX(-4%);
+  transition: 2s;
+}
+
+.colored a img:hover {
+  transform: scale(1.1) translateX(-3%);
+}

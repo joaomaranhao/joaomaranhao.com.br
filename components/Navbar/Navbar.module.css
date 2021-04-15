@@ -1,6 +1,22 @@
 .nav {
   padding-top: 2rem;
   padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social a {
+  color: var(--darkBlue);
+  margin-left: 1em;
+}
+
+.social a:hover {
+  color: var(--blue);
 }
 
 .logo {
@@ -10,7 +26,11 @@
 }
 
 .menu {
-  height: calc(100vh - 6.3em);
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: calc(100vh - 6.5em);
   display: flex;
   flex-direction: column;
   justify-content: space-around;

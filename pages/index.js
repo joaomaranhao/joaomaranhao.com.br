@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
+import Layout from '../components/Layout'
+import styles from '../styles/pages/Home.module.css'
+import { MdComputer } from 'react-icons/md'
 
 export default function Home () {
   return (
@@ -8,7 +10,24 @@ export default function Home () {
         <title>Home | João Maranhão - Frontend Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Layout>
+        <div className={styles.intro}>
+          <div className={styles.text}>
+            <h1>João<br></br>Maranhão</h1>
+            <div className={styles.title}>
+              <div className={styles.icon}>
+                <MdComputer />
+              </div>
+              <span>Desenvolvedor Front-end</span>
+            </div>
+          </div>
+          <div className={styles.colored}>
+          <a>
+            <img src="/logo-colors.svg" alt=""/>
+          </a>
+          </div>
+        </div>
+      </Layout>
     </div>
   )
 }
