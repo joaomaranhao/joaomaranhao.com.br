@@ -24,7 +24,7 @@ export default function Home () {
           </div>
           <div className={styles.colored}>
           <a>
-            <img src="/logo-colors.svg" alt=""/>
+            <img src="/logo-colors.svg" alt="João Maranhão"/>
           </a>
           </div>
         </div>

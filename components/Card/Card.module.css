@@ -9,7 +9,18 @@
 }
 
 .text {
+  position: relative;
   width: 40%;
+}
+
+.text::before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 2px;
+  background-color: var(--orange);
+  top: 15px;
+  right: 0;
 }
 
 .card h4 {
@@ -57,6 +68,7 @@
 }
 
 .text a {
+  position: relative;
   display: block;
   text-align: center;
   padding: 1em 2em;
@@ -66,7 +78,16 @@
   transition: .2s ease-in-out;
 }
 
+.text a::before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 2px;
+  background-color: var(--orange);
+  top: -20px;
+}
+
 .text a:hover {
-  border: 2px solid #FFDC52;
+  border: 2px solid var(--grey);
   background-color: var(--lightBlue);
 }
