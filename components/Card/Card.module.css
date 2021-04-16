@@ -5,7 +5,7 @@
   max-width: 500px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .text {
@@ -86,8 +86,47 @@
   background-color: var(--orange);
   top: -20px;
 }
+.text a::after {
+  position: absolute;
+  content: '➔';
+  right: 15px;
+  color: #F5D34F;
+}
 
 .text a:hover {
   border: 2px solid var(--grey);
   background-color: var(--lightBlue);
+}
+
+@media only screen and (max-width: 520px) {
+  .card h4 {
+    font-size: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 476px) {
+  .text a::before {
+    width: 100px;
+    top: -20px;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .text a::before {
+    width: 100px;
+    top: -20px;
+    left: 20px;
+  }
+  .text a::after {
+    display: none;
+  }
+  .text::before {
+    width: 80px;
+    height: 2px;
+    background-color: var(--orange);
+    top: 15px;
+    right: 0;
+  }
 }
