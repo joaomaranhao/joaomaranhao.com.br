@@ -114,16 +114,20 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .text a {
+    font-size: .7rem;
+  }
+
   .text a::before {
-    width: 100px;
+    width: 80px;
     top: -20px;
-    left: 20px;
+    left: 10px;
   }
   .text a::after {
     display: none;
   }
   .text::before {
-    width: 80px;
+    width: 60px;
     height: 2px;
     background-color: var(--orange);
     top: 15px;

@@ -28,7 +28,7 @@ export default function Home () {
           </a>
           </div>
         </div>
-        <div className={styles.portfolio}>
+        <div className={styles.portfolio} id="portfolio">
           <div className={styles.container}>
             <h3>Portfolio</h3>
           </div>

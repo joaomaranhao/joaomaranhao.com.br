@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <nav className={styles.nav}>
         <div>
-          <MenuIcon btnState={setIsOpen} />
+          <MenuIcon btnState={setIsOpen} isOpen={isOpen} />
           <Link href="/">
             <a>
               <img src="logo.svg" alt="João Maranhão" className={styles.logo}/>
@@ -29,7 +29,8 @@ const Navbar = () => {
           </a>
         </div>
       </nav>
-      <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+      <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}
+      onClick={() => setIsOpen(!isOpen)}>
         <Link href="/">
           <a>Home</a>
         </Link>

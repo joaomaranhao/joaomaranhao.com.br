@@ -12,7 +12,15 @@
   transition: .5s;
 }
 
-.intro h1 {
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3.5em;
+}
+
+.text h1 {
   font-family: 'Teko', sans-serif;
   font-size: 5rem;
   line-height: 0.8em;
@@ -38,22 +46,12 @@
   width: 60px;
   height: 40px;
   border-radius: 25px;
-  
 }
 
 .title span {
   margin-left: 1em;
   transition: 0.5s;
   font-size: 0.8rem;
-}
-
-
-.text {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 3.5em;
 }
 
 .colored {
@@ -124,7 +122,19 @@
 
 
 @media only screen and (max-width: 380px) {
-  .intro h1 {
+  .text {
+    padding: 0;
+
+  }
+  .text h1 {
     font-size: 4rem;
+  }
+
+  .title {
+    letter-spacing: 0.2em;
+  }
+
+  .colored {
+    display: none;
   }
 }
