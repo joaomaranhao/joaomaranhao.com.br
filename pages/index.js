@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import styles from '../styles/pages/Home.module.css'
 import { MdComputer } from 'react-icons/md'
+import Card from '../components/Card'
 
 export default function Home () {
   return (
@@ -26,6 +27,9 @@ export default function Home () {
             <img src="/logo-colors.svg" alt=""/>
           </a>
           </div>
+        </div>
+        <div className={styles.portfolio}>
+          <Card />
         </div>
       </Layout>
     </div>

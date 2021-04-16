@@ -6,6 +6,7 @@
   padding: 0 40px;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 4em;
   transition: .5s;
 }
 
@@ -75,4 +76,11 @@
 
 .colored a img:hover {
   transform: scale(1.1) translateX(-3%);
+}
+
+.portfolio {
+  padding: 4em 0;
+  background-color: var(--blue);
+  
+  color: white;
 }
