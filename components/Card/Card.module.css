@@ -5,6 +5,7 @@
   max-width: 500px;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .text {
@@ -28,6 +29,24 @@
   background-color: var(--grey);
   border-radius: 10px;
   box-shadow: -1em 1.5em var(--lightBlue);
+  image-rendering: -webkit-optimize-contrast;
+  transition: .2s ease-in-out;
+}
+
+.image:hover {
+  background-color: var(--darkBlue);
+}
+
+
+.image p {
+  color: white;
+  font-weight: 500;
+  font-size: .8rem;
+  text-align: center;
+  background-color: var(--lightBlue);
+  padding: 15px 0;
+  margin: 0;
+  border-top: 2px solid var(--darkBlue);
 }
 
 .card img {
@@ -44,9 +63,10 @@
   border: 2px solid var(--darkBlue);
   background-color: #2C66EE;
   font-size: .8rem;
-
+  transition: .2s ease-in-out;
 }
 
 .text a:hover {
   border: 2px solid #FFDC52;
+  background-color: var(--lightBlue);
 }

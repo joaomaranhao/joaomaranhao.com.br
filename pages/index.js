@@ -29,7 +29,21 @@ export default function Home () {
           </div>
         </div>
         <div className={styles.portfolio}>
-          <Card />
+          <div className={styles.container}>
+            <h3>Portfolio</h3>
+          </div>
+          <div className={styles.container}>
+            <Card title="Tabela Fipe"
+            text="Serviço de consulta de carros brasileiros e seus respectivos preços."
+            imgSrc="/images/brazilian-vehicles-and-price-mobile.jpg"
+            url="https://brazilian-vehicles-and-price.vercel.app/"
+            repo="https://github.com/joaomaranhao/brazilian-vehicles-and-price" />
+            <Card title="Tabela Fipe"
+            text="Serviço de consulta de carros brasileiros e preços."
+            imgSrc="/images/brazilian-vehicles-and-price-mobile.jpg"
+            url="https://brazilian-vehicles-and-price.vercel.app/"
+            repo="https://github.com/joaomaranhao/brazilian-vehicles-and-price" />
+          </div>
         </div>
       </Layout>
     </div>

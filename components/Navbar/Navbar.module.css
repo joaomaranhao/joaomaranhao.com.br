@@ -59,3 +59,11 @@
   transform: translateX(0);
   opacity: 1;
 }
+
+@media only screen and (max-width: 380px) {
+  .logo {
+    margin-left: 2rem;
+    width: 3em;
+    height: 3em;
+  }
+}

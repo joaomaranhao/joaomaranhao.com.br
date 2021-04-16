@@ -2,8 +2,9 @@
   display: flex;
   height: 80vh;
   width: 100%;
-  margin-top: 3em;
-  padding: 0 40px;
+  max-width: 1200px;
+  margin: 3em auto 0;
+  padding: 0 2rem;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 4em;
@@ -70,12 +71,11 @@
 .colored a img {
   object-fit: cover;
   height: 100%;
-  transform: translateX(-4%);
   transition: 2s;
 }
 
 .colored a img:hover {
-  transform: scale(1.1) translateX(-3%);
+  transform: scale(1.1);
 }
 
 .portfolio {
@@ -83,4 +83,51 @@
   background-color: var(--blue);
   
   color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container h3 {
+  position: relative;
+  font-weight: 100;
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: 2rem;
+  letter-spacing: .9rem;
+  transition: .2s ease-in-out;
+}
+
+.container h3:hover {
+  letter-spacing: 1rem;
+}
+
+.container h3::before {
+  position: absolute;
+  content: '';
+  top: 45px;
+  left: 55px;
+  height: 3px;
+  width: 200px;
+  background-color: var(--lightBlue);
+}
+.container h3::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 200px;
+  background-color: var(--lightBlue);
+}
+
+@media only screen and (max-width: 380px) {
+  .intro h1 {
+    font-size: 4rem;
+  }
 }
