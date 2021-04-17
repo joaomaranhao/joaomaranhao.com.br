@@ -26,6 +26,7 @@
 }
 
 .menu {
+  opacity: 0;
   position: absolute;
   right: 0;
   left: 0;
@@ -39,7 +40,6 @@
   align-items: center;
   background-color: white;
   transform: translateX(-100%);
-  opacity: 0;
   transition: .4s ease-out;
 }
 
