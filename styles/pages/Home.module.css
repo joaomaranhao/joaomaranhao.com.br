@@ -89,6 +89,9 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+.portfolio .container {
   border-left: 1px solid var(--lightBlue);
   border-right: 1px solid var(--lightBlue);
 }
@@ -118,6 +121,10 @@
   height: 3px;
   width: 60px;
   background-color: var(--lightBlue);
+}
+
+.blog .container h3::before {
+  background-color: var(--darkBlue);
 }
 
 

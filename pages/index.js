@@ -12,7 +12,7 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className={styles.intro}>
+        <section className={styles.intro}>
           <div className={styles.text}>
             <h1>João<br></br>Maranhão</h1>
             <div className={styles.title}>
@@ -27,8 +27,8 @@ export default function Home () {
             <img src="/logo-colors.svg" alt="João Maranhão"/>
           </a>
           </div>
-        </div>
-        <div className={styles.portfolio} id="portfolio">
+        </section>
+        <section className={styles.portfolio} id="portfolio">
           <div className={styles.container}>
             <h3>Portfolio</h3>
           </div>
@@ -44,7 +44,12 @@ export default function Home () {
             url="https://brazilian-vehicles-and-price.vercel.app/"
             repo="https://github.com/joaomaranhao/brazilian-vehicles-and-price" />
           </div>
-        </div>
+        </section>
+        <section className={styles.blog}>
+          <div className={styles.container}>
+            <h3>Blog</h3>
+          </div>
+        </section>
       </Layout>
     </div>
   )

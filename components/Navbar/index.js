@@ -18,13 +18,13 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={styles.social}>
-          <a href="https://github.com/joaomaranhao">
+          <a href="https://github.com/joaomaranhao" target="__blank" rel="noopener noreferrer">
             <FaGithub size="2em" />
           </a>
-          <a href="https://www.linkedin.com/in/joaofmaranhao">
+          <a href="https://www.linkedin.com/in/joaofmaranhao" target="__blank" rel="noopener noreferrer">
             <FaLinkedinIn size="2em" />
           </a>
-          <a href="https://twitter.com/joaofmaranhao">
+          <a href="https://twitter.com/joaofmaranhao" target="__blank" rel="noopener noreferrer">
             <FaTwitter size="2em" />
           </a>
         </div>
