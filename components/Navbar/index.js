@@ -13,7 +13,7 @@ const Navbar = () => {
           <MenuIcon btnState={setIsOpen} isOpen={isOpen} />
           <Link href="/">
             <a>
-              <img src="logo.svg" alt="João Maranhão" className={styles.logo}/>
+              <img src="/logo.svg" alt="João Maranhão" className={styles.logo}/>
             </a>
           </Link>
         </div>

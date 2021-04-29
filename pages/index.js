@@ -3,8 +3,11 @@ import Layout from '../components/Layout'
 import styles from '../styles/pages/Home.module.css'
 import { MdComputer } from 'react-icons/md'
 import Card from '../components/Card'
+import { getSortedPostsData } from '../lib/posts'
+import PostContainer from '../components/PostContainer'
 
-export default function Home () {
+export default function Home ({ allPostsData }) {
+  const lastPost = allPostsData[allPostsData.length - 1]
   return (
     <div>
       <Head>
@@ -19,7 +22,7 @@ export default function Home () {
               <div className={styles.icon}>
                 <MdComputer />
               </div>
-              <span>Desenvolvedor Front-end</span>
+              <span>Desenvolvedor<br />Front-end</span>
             </div>
           </div>
           <div className={styles.colored}>
@@ -49,8 +52,20 @@ export default function Home () {
           <div className={styles.container}>
             <h3>Blog</h3>
           </div>
+          <div className={styles.container}>
+            <PostContainer title={lastPost.title} id={lastPost.id} description={lastPost.description} date={lastPost.date} />
+          </div>
         </section>
       </Layout>
     </div>
   )
+}
+
+export async function getStaticProps () {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
