@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--blue);
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.footer img {
+  width: 50px;
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.container a:hover {
+  color: var(--darkBlue);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+}
+
+.social a {
+  color: var(--grey);
+  margin-left: 2em;
+}

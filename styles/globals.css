@@ -17,6 +17,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  height: 100%;
+}
+
+body > div:first-child {
+  min-height: 100%;
 }
 
 a {

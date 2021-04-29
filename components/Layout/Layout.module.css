@@ -1,6 +1,5 @@
-.container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 2rem;
+.content {
+  min-height: calc(100vh - 103.38px);
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
