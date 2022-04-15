@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import About from '../components/About'
 import Hero from '../components/Hero'
 import styles from '../styles/pages/Home.module.css'
 
@@ -10,6 +11,7 @@ export default function Home() {
         <title>João Maranhão | Desenvolvedor de software</title>
       </Head>
       <Hero />
+      <About />
     </div>
   )
 }

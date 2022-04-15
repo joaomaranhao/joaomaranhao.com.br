@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  background-color: var(--dark);
+}
+.content {
+  display: flex;
+  max-width: 1218px;
+  margin: 0 auto;
+}
+
+.left {
+  width: 50vw;
+}
+
+
+.text {
+  color: var(--light);
+}
+
+.text > h2 {
+  color: var(--primary);
+}
+
+.right {
+  width: 50vw;
+  background-color: var(--light);
+}

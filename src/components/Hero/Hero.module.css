@@ -15,6 +15,7 @@
   color: var(--light);
   position: relative;
   
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,6 +131,7 @@
 }
 
 .image > img {
+  overflow: initial;
   transition: all 0.5s ease;
 }
 
