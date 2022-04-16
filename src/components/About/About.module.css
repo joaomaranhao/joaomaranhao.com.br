@@ -1,7 +1,6 @@
 .container {
   display: flex;
   width: 100vw;
-  height: 80vh;
   background-color: var(--dark);
 }
 .content {
@@ -12,18 +11,96 @@
 
 .left {
   width: 50vw;
+  padding-right: 5rem;
 }
 
-
 .text {
+  padding: 1rem;
   color: var(--light);
 }
 
 .text > h2 {
+  font-size: 2.5rem;
   color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: center;
 }
+
+.text p:last-of-type {
+  margin-top: 2rem;
+}
+
+.tools {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.node {
+  transition: all .2s ease;
+}
+
+.node:hover {
+  color: #63975E;
+}
+
+.typescript {
+  transition: all .2s ease;
+}
+
+.typescript:hover {
+  color: #3178C6;
+}
+
+.react {
+  transition: all .2s ease;
+}
+
+.react:hover {
+  color: #61DAFB;
+}
+
+.mongo {
+  transition: all .2s ease;
+}
+
+.mongo:hover {
+  color: #116149;
+}
+
+.postgres {
+  transition: all .2s ease;
+}
+
+.postgres:hover {
+  color: #336791;
+}
+
 
 .right {
   width: 50vw;
+  display: flex;
   background-color: var(--light);
 }
+
+.imageContainer {
+  display: flex;
+  background-color: var(--primary);
+  width: 100%;
+  
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.photo {
+  mix-blend-mode: multiply;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+

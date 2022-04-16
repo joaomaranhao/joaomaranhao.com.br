@@ -87,10 +87,8 @@
 .right {
   width: 60vw;
   display: flex;
-
-  position: relative;
-
   border-left: 1px solid var(--light);
+  position: relative;
 }
 
 .social {
@@ -127,11 +125,16 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .image > img {
   overflow: initial;
+
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
   transition: all 0.5s ease;
 }
 
