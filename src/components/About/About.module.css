@@ -93,7 +93,6 @@
   display: flex;
   background-color: var(--primary);
   width: 100%;
-  
   flex-shrink: 0;
   overflow: hidden;
 }
@@ -102,5 +101,6 @@
   mix-blend-mode: multiply;
   flex-shrink: 0;
   object-fit: cover;
+  filter: brightness(1.4);
 }
 
