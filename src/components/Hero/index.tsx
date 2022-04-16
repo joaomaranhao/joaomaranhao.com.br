@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from './Hero.module.css'
 
-import {FaGithub, FaLinkedinIn, FaTwitter, FaArrowDown} from 'react-icons/fa'
-import {MdOutlineComputer} from 'react-icons/md'
+import { FaGithub, FaLinkedinIn, FaTwitter, FaArrowDown } from 'react-icons/fa'
+import { MdOutlineComputer } from 'react-icons/md'
 
 import Logo from '../../../public/logo-light.svg'
 
@@ -14,12 +14,13 @@ const Hero = () => {
           <div className={styles.logo}>
             <Image
               src={Logo}
+              alt="Logotipo JM colorido"
             />
           </div>
           <div className={styles.social}>
             <ul>
               <li>
-                <a href="https://github.com/joaomaranhao" target="_blank">
+                <a href="https://github.com/joaomaranhao" rel='noreferrer' target="_blank">
                   <FaGithub
                     className={styles.icon}
                     size={'2.5rem'}
@@ -27,7 +28,7 @@ const Hero = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/joaofmaranhao"  target="_blank">
+                <a href="https://www.linkedin.com/in/joaofmaranhao" rel='noreferrer' target="_blank">
                   <FaLinkedinIn
                     className={styles.icon}
                     size={'2.5rem'}
@@ -35,7 +36,7 @@ const Hero = () => {
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/joaofmaranhao"  target="_blank">
+                <a href="https://twitter.com/joaofmaranhao" target="_blank" rel="noreferrer">
                   <FaTwitter
                     className={styles.icon}
                     size={'2.5rem'}

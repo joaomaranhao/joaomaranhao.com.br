@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import About from '../components/About'
 import Hero from '../components/Hero'
+import Projects from '../components/Projects'
 import styles from '../styles/pages/Home.module.css'
 
-export default function Home() {
+export default function Home () {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <Hero />
       <About />
+      <Projects />
     </div>
   )
 }
