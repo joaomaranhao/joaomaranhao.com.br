@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Socials from '../Socials'
 
 import styles from './Hero.module.css'
@@ -17,7 +18,7 @@ const Hero = () => {
           <div className={styles.logo}>
             <Image
               src={Logo}
-              alt="Logotipo JM colorido"
+              alt="Logotipo JM"
             />
           </div>
           <Socials />
@@ -30,13 +31,15 @@ const Hero = () => {
               Desenvolvedor de software
             </p>
           </div>
-          <button className={styles.cta}>
-            Projetos
-            <FaArrowDown
-              size={'1.2rem'}
-              className={styles.arrow}
-            />
-            </button>
+          <Link href="#projects">
+            <a className={styles.cta}>
+              Projetos
+              <FaArrowDown
+                size={'1.2rem'}
+                className={styles.arrow}
+              />
+            </a>
+          </Link>
         </div>
         <div className={styles.right}>
           <div className={styles.imageContainer}>

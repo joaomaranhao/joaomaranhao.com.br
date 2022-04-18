@@ -6,6 +6,8 @@
 .content {
   color: var(--light);
   display: flex;
+  max-width: 1218px;
+  margin: 0 auto;
 }
 
 .left {

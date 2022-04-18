@@ -15,7 +15,9 @@ export default function Home () {
       </Head>
       <Hero />
       <About />
-      <Projects />
+      <div id='projects'>
+        <Projects />
+      </div>
       <Contact />
     </div>
   )
