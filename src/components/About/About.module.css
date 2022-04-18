@@ -99,8 +99,8 @@
 
 .photo {
   mix-blend-mode: multiply;
+  filter: brightness(1.7);
   flex-shrink: 0;
   object-fit: cover;
-  filter: brightness(1.4);
 }
 

@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaArrowDown } from 'react-icons/fa'
 import { MdOutlineComputer } from 'react-icons/md'
 
 import Logo from '../../../public/logo-light.svg'
+import LogoColors from '../../../public/logo-colors.svg'
 
 const Hero = () => {
   return (
@@ -63,8 +64,13 @@ const Hero = () => {
             </button>
         </div>
         <div className={styles.right}>
-          <div className={styles.image}>
-            <img src="/logo-colors.svg" alt="" />
+          <div className={styles.imageContainer}>
+            <Image
+              className={styles.image}
+              src={LogoColors}
+              layout="fill"
+              alt="Logo JM em branco, em cima de um fundo com 5 faixas diagonais coloridas em rosa, amarelo, azul, azul escuro e cinza"
+            />
           </div>
         </div>
       </div>
