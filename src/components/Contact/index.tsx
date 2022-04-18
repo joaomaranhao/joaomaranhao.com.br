@@ -1,38 +1,73 @@
+import { useForm } from 'react-hook-form'
+import axios from 'axios'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 import styles from './Contact.module.css'
 
 const Contact = () => {
+  const { handleSubmit, register, formState: { errors } } = useForm()
+  const onSubmit = async values => {
+    const config = {
+      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: values
+    }
+
+    try {
+      const response = await axios.post(config.url, { data: config.data }, { headers: config.headers })
+      if (response.status === 200) {
+        console.log('Success')
+      }
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.left}>
           <h3>Contato</h3>
 
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className={styles.field}>
                 <input
                   type="text"
-                  name="name"
+                  {...register('name', {
+                    required: 'O nome é obrigatório',
+                    validate: value => value !== 'admin' || 'Nice try!'
+                  })}
                   placeholder='Nome'
                 />
+                {errors.name && errors.name.message}
               </div>
 
               <div className={styles.field}>
                 <input
                   type="text"
-                  name="email"
+                  {...register('email', {
+                    required: 'O email é obrigatório',
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: 'Email inválido'
+                    }
+                  })}
                   placeholder='Email'
                 />
+                {errors.email && errors.email.message}
               </div>
 
               <div className={styles.field}>
                 <textarea
-                name="message"
                 rows={4}
                 placeholder="Mensagem"
-                >
-                </textarea>
+                {...register('message', {
+                  required: 'A mensagem é obrigatória'
+                })}
+                />
+                {errors.message && errors.message.message}
               </div>
 
               <div className={styles.field}>

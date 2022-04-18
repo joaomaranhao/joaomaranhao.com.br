@@ -21,6 +21,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": "off"
+        "indent": "off",
+        "import/no-anonymous-default-export": "off"
     }
 }
