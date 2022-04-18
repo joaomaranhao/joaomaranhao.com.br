@@ -104,3 +104,18 @@
   object-fit: cover;
 }
 
+@media (max-width: 755px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    border-bottom: 2rem solid var(--dark);
+  }
+}
+
