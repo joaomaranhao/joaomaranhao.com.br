@@ -49,7 +49,6 @@ const Hero = () => {
             <h1>João Maranhão</h1>
             <p>
               <MdOutlineComputer
-                size={'1.5rem'}
                 className={styles.laptop}
               />
               Desenvolvedor de software
