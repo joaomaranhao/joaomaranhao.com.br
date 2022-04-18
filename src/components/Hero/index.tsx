@@ -1,7 +1,9 @@
 import Image from 'next/image'
+import Socials from '../Socials'
+
 import styles from './Hero.module.css'
 
-import { FaGithub, FaLinkedinIn, FaTwitter, FaArrowDown } from 'react-icons/fa'
+import { FaArrowDown } from 'react-icons/fa'
 import { MdOutlineComputer } from 'react-icons/md'
 
 import Logo from '../../../public/logo-light.svg'
@@ -18,34 +20,7 @@ const Hero = () => {
               alt="Logotipo JM colorido"
             />
           </div>
-          <div className={styles.social}>
-            <ul>
-              <li>
-                <a href="https://github.com/joaomaranhao" rel='noreferrer' target="_blank">
-                  <FaGithub
-                    className={styles.icon}
-                    size={'2.5rem'}
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/joaofmaranhao" rel='noreferrer' target="_blank">
-                  <FaLinkedinIn
-                    className={styles.icon}
-                    size={'2.5rem'}
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/joaofmaranhao" target="_blank" rel="noreferrer">
-                  <FaTwitter
-                    className={styles.icon}
-                    size={'2.5rem'}
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <Socials />
           <div className={styles.text}>
             <h1>João Maranhão</h1>
             <p>

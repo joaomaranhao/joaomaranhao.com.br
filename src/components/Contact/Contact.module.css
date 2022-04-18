@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  background-color: var(--dark);
+}
+
+.content {
+  color: var(--light);
+  display: flex;
+}
+
+.left {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.right {
+  width: 30vw;
+  background-color: aliceblue;
+}
+
+.left > h3 {
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+.left form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  width: 100%;
+}
+
+.field > input, .field > textarea {
+  padding: .5rem 1rem;
+  width: 100%;
+  margin: 1.5rem 0;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--light);
+  color: var(--light);
+
+  font-size: 1.1rem;
+}
+
+.field > input:focus, .field > textarea:focus {
+  outline: none;
+}
+
+.field > button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: var(--primary);
+  border: none;
+  color: var(--light);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all .2s ease;
+}
+
+.field > button:hover,
+.field > button:focus {
+  box-shadow: inset 0 -5.25em 0 0 var(--light);
+  color: var(--primary);
+}
+
+.right {
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  flex: 1;
+}
+
+.social ul {
+  height: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.social ul li {
+  padding: 1rem .5rem;
+  margin: 0;
+}
+
+.icon {
+  fill: var(--primary);
+  font-size: 5rem;
+  
+  transition: all .2s ease;
+}
+
+.icon:hover {
+  fill: #FD53B4;
+}
+
+.madeBy {
+  text-align: center;
+  color: var(--dark);
+}
+
+.madeBy span {
+  color: #FD53B4;
+}
+
+
+@media (max-width: 755px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100vw;
+  }
+
+  .right {
+    width: 100vw;
+    padding-bottom: 2rem;
+  }
+
+  .social > ul {
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+}
+
