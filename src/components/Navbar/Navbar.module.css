@@ -1,0 +1,32 @@
+.container {
+  background-color: var(--primary);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  max-width: 1218px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 6rem;
+}
+
+.logoContainer {
+  display: flex;
+  height: 100%;
+  width: 5rem;
+  padding: 1rem;
+}
+
+.logo img {
+  filter: brightness(1.5);
+
+  transition: all .2s ease;
+}
+
+.logo img:hover {
+  filter: brightness(1);
+}
+
