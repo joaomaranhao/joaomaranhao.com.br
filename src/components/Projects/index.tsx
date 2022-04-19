@@ -1,4 +1,4 @@
-import TabelaFipe from '../../../public/images/brazilian-vehicles-and-price.jpg'
+import TabelaFipe from '../../../public/images/fipe-desktop.jpg'
 import Project from '../Project'
 
 import styles from './Projects.module.css'
