@@ -10,7 +10,7 @@ const Projects = () => {
         <h2>Projetos</h2>
         <div className={styles.projects}>
           <Project
-            href={'/'}
+            href={'/fipe'}
             imgSrc={TabelaFipe}
           />
 
