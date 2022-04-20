@@ -28,6 +28,7 @@
 .left > h3 {
   color: var(--primary);
   font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .left form {
