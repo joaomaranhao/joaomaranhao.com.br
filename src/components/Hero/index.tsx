@@ -48,6 +48,7 @@ const Hero = () => {
               src={LogoColors}
               layout="fill"
               alt="Logo JM em branco, em cima de um fundo com 5 faixas diagonais coloridas em rosa, amarelo, azul, azul escuro e cinza"
+              priority
             />
           </div>
         </div>
