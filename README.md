@@ -17,7 +17,7 @@ Desktop View             |  Mobile View
 :-------------------------:|:-------------------------:
 ![](https://raw.githubusercontent.com/joaomaranhao/joaomaranhao.com.br/main/public/images/desktop-view.jpg)  |  ![](https://raw.githubusercontent.com/joaomaranhao/joaomaranhao.com.br/main/public/images/mobile-view.jpg)
 
-Página pessoal construída para divulgar o meu trabalho, escrever sobre tecnologia e sobre o que estou aprendendo.
+Página pessoal construída para divulgar o meu trabalho.
 
 ### Construído com
 
