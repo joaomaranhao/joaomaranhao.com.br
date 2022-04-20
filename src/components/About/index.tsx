@@ -41,6 +41,7 @@ const About = () => {
             className={styles.photo}
             src={joao}
             alt="Minha foto ostentando um bigodin"
+            priority
             />
           </div>
         </div>

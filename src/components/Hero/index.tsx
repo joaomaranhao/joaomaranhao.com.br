@@ -19,6 +19,7 @@ const Hero = () => {
             <Image
               src={Logo}
               alt="Logotipo JM"
+              priority
             />
           </div>
           <Socials />
