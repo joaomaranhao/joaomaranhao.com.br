@@ -1,10 +1,24 @@
+import { useState } from 'react'
+import Lootie from 'react-lottie'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
+import mailSentAnimation from '../../looties/97471-sent-email.json'
 import styles from './Contact.module.css'
 
 const Contact = () => {
+  const [send, setSend] = useState(false)
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+      animationData: mailSentAnimation,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+  }
+
   const { handleSubmit, register, formState: { errors } } = useForm()
   const onSubmit = async values => {
     const config = {
@@ -18,7 +32,7 @@ const Contact = () => {
     try {
       const response = await axios.post(config.url, { data: config.data }, { headers: config.headers })
       if (response.status === 200) {
-        console.log('Success')
+        setSend(true)
       }
     } catch (error) {
       console.error(error)
@@ -31,7 +45,8 @@ const Contact = () => {
         <div className={styles.left}>
           <h3>Contato</h3>
 
-            <form onSubmit={handleSubmit(onSubmit)}>
+            {!send
+? (<form onSubmit={handleSubmit(onSubmit)}>
               <div className={styles.field}>
                 <input
                   type="text"
@@ -77,7 +92,13 @@ const Contact = () => {
                   Enviar
                 </button>
               </div>
-            </form>
+            </form>)
+: (<div className={styles.send}>
+  <div className={styles.animationContainer}>
+    <Lootie options={defaultOptions} />
+  </div>
+  <p>Mensagem enviada!</p>
+  </div>)}
 
         </div>
         <div className={styles.right}>
