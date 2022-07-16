@@ -17,8 +17,9 @@ const Project = ({ href, imgSrc, imgAlt, projectName }) => {
                 className={styles.photo}
                 layout='responsive'
                 objectFit='cover'
-                  src={imgSrc}
-                  alt={imgAlt}
+                loading='lazy'
+                src={imgSrc}
+                alt={imgAlt}
                 />
               </a>
             </Link>

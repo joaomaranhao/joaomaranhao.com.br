@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import styles from '../styles/pages/Fipe.module.css'
+import styles from '../styles/pages/Project.module.css'
 
 import FipeDesktop from '../../public/images/weather-app.jpg'
 

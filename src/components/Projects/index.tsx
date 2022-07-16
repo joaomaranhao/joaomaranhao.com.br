@@ -1,5 +1,6 @@
 import TabelaFipe from '../../../public/images/fipe-desktop.jpg'
 import WeatherApp from '../../../public/images/weather-app.jpg'
+import Channel from '../../../public/images/channel.jpg'
 import Project from '../Project'
 
 import styles from './Projects.module.css'
@@ -21,6 +22,12 @@ const Projects = () => {
             projectName="Weather App"
             href={'/weather'}
             imgSrc={WeatherApp}
+          />
+          <Project
+            imgAlt={'Screenshot do canal do Youtube "League of Legends Replays" que foi criado programaticamente'}
+            projectName="Automatização de canal do Youtube"
+            href={'/channel'}
+            imgSrc={Channel}
           />
 
         </div>
