@@ -10,7 +10,7 @@ const ChannelPage = () => {
       <Navbar />
       <div className={styles.content}>
         <div className={styles.left}>
-          <a href="https://https://github.com/joaomaranhao/video-maker/" rel='noreferrer' target='__blank'>
+          <a href="https://github.com/joaomaranhao/video-maker/" rel='noreferrer' target='__blank'>
             <div className={styles.imagesContainer}>
               <Image
                 src={Channel}

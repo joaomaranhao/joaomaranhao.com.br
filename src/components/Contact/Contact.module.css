@@ -162,6 +162,11 @@
     padding-bottom: 2rem;
   }
 
+  .left > form:focus {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .right {
     width: 100vw;
     padding-bottom: .0;

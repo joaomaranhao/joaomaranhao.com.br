@@ -5,6 +5,12 @@
   overflow: hidden;
 }
 
+.container a {
+  text-decoration: underline;
+  color: var(--primary);
+  font-weight: bold;
+}
+
 .content {
   display: flex;
   justify-content: center;
