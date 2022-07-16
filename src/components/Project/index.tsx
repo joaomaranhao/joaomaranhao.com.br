@@ -4,19 +4,21 @@ import Link from 'next/link'
 import { FaArrowDown } from 'react-icons/fa'
 import styles from './Project.module.css'
 
-const Project = ({ href, imgSrc }) => {
+const Project = ({ href, imgSrc, imgAlt, projectName }) => {
   return (
     <div className={styles.project}>
             <Link href={href}>
-              <a>
+              <a className={styles.imageContainer}>
                 <div className={styles.title}>
-                  <h3>Tabela FIPE</h3>
+                  <h3>{projectName}</h3>
                   <FaArrowDown />
                 </div>
                 <Image
                 className={styles.photo}
+                layout='responsive'
+                objectFit='cover'
                   src={imgSrc}
-                  alt="Foto do aplicativo de Tabela Fipe, visão Desktop e mobile."
+                  alt={imgAlt}
                 />
               </a>
             </Link>

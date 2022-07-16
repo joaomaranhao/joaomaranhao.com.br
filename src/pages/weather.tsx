@@ -2,19 +2,19 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import styles from '../styles/pages/Fipe.module.css'
 
-import FipeDesktop from '../../public/images/fipe-desktop.jpg'
+import FipeDesktop from '../../public/images/weather-app.jpg'
 
-const Fipe = () => {
+const Weather = () => {
   return (
     <div className={styles.container}>
       <Navbar />
       <div className={styles.content}>
         <div className={styles.left}>
-          <a href="https://brazilian-vehicles-and-price.vercel.app/" rel='noreferrer' target='__blank'>
+          <a href="https://weather-app-joaomaranhao.vercel.app/" rel='noreferrer' target='__blank'>
             <div className={styles.imagesContainer}>
               <Image
                 src={FipeDesktop}
-                alt='Screenshot do site da Tabela Fipe, na versão para desktop'
+                alt='Screenshot do site da Weather App, na versão para desktop'
               />
             </div>
           </a>
@@ -22,17 +22,17 @@ const Fipe = () => {
         <div className={styles.right}>
           <div className={styles.text}>
             <h2 className={styles.description}>
-            Veículos brasileiros e seus respectivos preços.
+            Aplicativo de previsão do tempo
             </h2>
 
-            <p>Aplicação criada com o intuito de ser um serviço para consulta de preços de carros, motos e caminhões de acordo com a Tabela Fipe</p>
+            <p>Previsão do tempo feita com dados fornecidos pela API do <a href="https://api.weatherapi.com/v1">Weather API</a></p>
 
             <h3>Construído com:</h3>
             <ul>
               <li>NextJS</li>
-              <li>Tailwind CSS</li>
+              <li>CSS Modules</li>
               <li>Typescript</li>
-              <li>Dados <a href="https://deividfortuna.github.io/fipe/">dessa API</a></li>
+              <li>Dados <a href="https://api.weatherapi.com/v1">dessa API</a></li>
             </ul>
           </div>
         </div>
@@ -41,4 +41,4 @@ const Fipe = () => {
   )
 }
 
-export default Fipe
+export default Weather

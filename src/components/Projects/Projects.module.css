@@ -13,6 +13,7 @@
   margin: 0 auto;
   text-align: center;
   padding-bottom: 1.5rem;
+  width: 100%;
 }
 
 .content > h2 {
@@ -26,7 +27,7 @@
 .projects {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
   flex-wrap: wrap;
   padding: 0 2rem 0 1rem;
 }
-
