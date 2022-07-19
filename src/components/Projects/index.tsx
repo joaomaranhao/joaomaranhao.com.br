@@ -12,6 +12,12 @@ const Projects = () => {
         <h2>Projetos</h2>
         <div className={styles.projects}>
           <Project
+            imgAlt={'Screenshot do canal do Youtube "League of Legends Replays" que foi criado programaticamente'}
+            projectName="Automatização de canal do Youtube"
+            href={'/channel'}
+            imgSrc={Channel}
+          />
+          <Project
             imgAlt={'Foto do aplicativo de Tabela Fipe, visão Desktop e mobile.'}
             projectName="Tabela FIPE"
             href={'/fipe'}
@@ -22,12 +28,6 @@ const Projects = () => {
             projectName="Weather App"
             href={'/weather'}
             imgSrc={WeatherApp}
-          />
-          <Project
-            imgAlt={'Screenshot do canal do Youtube "League of Legends Replays" que foi criado programaticamente'}
-            projectName="Automatização de canal do Youtube"
-            href={'/channel'}
-            imgSrc={Channel}
           />
 
         </div>
