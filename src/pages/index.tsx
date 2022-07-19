@@ -8,6 +8,7 @@ import styles from '../styles/pages/Home.module.css'
 
 export default function Home () {
   return (
+    <>
     <div className={styles.container}>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -20,5 +21,6 @@ export default function Home () {
       </div>
       <Contact />
     </div>
+    </>
   )
 }
