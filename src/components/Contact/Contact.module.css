@@ -16,7 +16,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 65vh;
 }
 
 .right {
@@ -32,11 +31,12 @@
 
 .left form {
   width: 60%;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  height: fit-content;
   padding-bottom: 3rem;
   margin-bottom: 1rem;
 }
